@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import css from './Modal.module.css';
 
-export const Modal = ({ imageUrl, closeModal }) => {
+export const Modal = ({ imageUrl, onCloseModal }) => {
   const handleClose = event => {
     if (event.target.className === `${css.overlay}`) {
-      closeModal();
+      onCloseModal();
     }
   };
 
